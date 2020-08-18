@@ -16,14 +16,14 @@ from tkinter import messagebox,filedialog,ttk
 
 import numpy as np
 
-import ImpactFile
-import PreProcessing
-import ConvertFunc
-import LatticeFrame
-import ImpactTSet
-import ImpactTPlot
-import ImpactZSet
-import ImpactZPlot
+from . import ImpactFile
+from . import PreProcessing
+from . import ConvertFunc
+from . import LatticeFrame
+from . import ImpactTSet
+from . import ImpactTPlot
+from . import ImpactZSet
+from . import ImpactZPlot
 
 _MPINAME   ='mpirun'
 _IMPACT_T_NAME = 'ImpactT executable not defined'

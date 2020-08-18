@@ -1,13 +1,7 @@
 #!/usr/bin/env python3 
 
 import sys; 
-if not "./src/" in sys.path:
-    sys.path.append("./src/") 
-if not 'ImpactMainWindow' in sys.modules:
-    ImpactMainWindow = __import__('ImpactMainWindow')
-else:
-    eval('import ImpactMainWindow')
-    ImpactMainWindow = eval('reload(ImpactMainWindow)') 
+from src import ImpactMainWindow
 
 root = ImpactMainWindow.ImpactMainWindow()
 ImpactMainWindow.MyMenu(root)
